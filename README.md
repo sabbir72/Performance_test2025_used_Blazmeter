@@ -1,83 +1,73 @@
-✅ Executive Summary – Load Test Report Explanation
-[Open PDF in Viewer](https://github.com/sabbir72/Performance_test2025_used_Blazmeter/Executive_summary.pdf)
+# 🚀 Load Test Summary – BlazeDemo Site
 
-🗓 Test Execution Details
-Tester: Sabbir Ahamed
+## 📄 Executive Summary
 
-Date: May 12, 2025
+This document summarizes the results of a load test performed on May 12, 2025, using 50 virtual users over a duration of 9 minutes.
 
-Time: 3:51 PM – 4:01 PM
+---
 
-Duration: 9 minutes (actual test activity: ~8 minutes)
+## 💡 Overall Verdict: GOOD
 
-Location: West India (Mumbai, Azure)
+The system demonstrated a **healthy and stable performance** under medium traffic (50 Virtual Users). The load was handled efficiently without any errors or resource bottlenecks.
 
-Testing Tool: JMeter
+---
 
-Scenario Name: Blaz_Rec2025
+## 📌 Positive Indicators
 
-Max Virtual Users (VU): 50
+| Metric                  | Result        | Benchmark             | Evaluation                    |
+|-------------------------|---------------|------------------------|-------------------------------|
+| **Avg. Response Time**  | 723 ms        | Ideal: < 1000 ms       | ✅ Good – Fast response        |
+| **90% Response Time**   | 1787 ms       | Ideal: < 2000 ms       | ✅ Acceptable – Within limits |
+| **Error Rate**          | 0%            | Ideal: < 1%            | ✅ Excellent – No failures     |
+| **Throughput**          | 2.55 hits/sec | Depends on app logic   | ✅ Healthy flow                |
+| **CPU/Memory Usage**    | < 75%         | Ideal: < 80%           | ✅ Stable under load           |
 
-📊 Key Performance Metrics
-Metric	Value	Notes
-Average Response Time	723.38 ms	Time taken for complete response
-90% Response Time	1787 ms	90% of requests responded within this time
-Average Throughput	2.55 hits/sec	Number of requests served per second
-Average Bandwidth	24.48 KiB/s	Data transferred per second
-Error Rate	0%	No errors during test
+---
 
-🔍 Detailed Observations (Request Stats)
-Each endpoint or step in the test was measured:
+## ⚠️ Minor Considerations
 
-All pages had consistent response times between 400–600 ms.
+- The **90th percentile response time (1787 ms)** is significantly higher than the average (723 ms), indicating that **some users may experience latency under load peaks**.
+- While this is within acceptable limits, performance tuning could reduce these spikes.
 
-Peak response time for a specific scenario reached up to 1808 ms (avg) and 1978 ms (95th percentile).
+---
 
-No errors occurred during any of the requests.
+## 🚀 What This Means
 
-⚙️ System Resource Usage
-CPU & Memory Usage: Stayed well below 75% during the test.
+- The site is capable of handling **up to 50 concurrent users** with no noticeable degradation in performance.
+- Response times are well within acceptable limits for standard user interactions.
+- **No system or application errors** occurred during the test.
 
-Connections & Network I/O: Stable and within acceptable limits.
+---
 
-🧠 Glossary (Important Terms)
-Throughput: Requests handled per second.
+## 🟢 Conclusion
 
-Response Time: Time to get full response.
+- ✅ **PASS** for small to mid-scale application usage.
+- ✅ Suitable for **real-world moderate traffic**.
+- 🔄 **Next Steps**:
+  - Scale testing up to **100+ users**
+  - Introduce **peak-hour simulation**
+  - Monitor **longer-duration behavior**
 
-Latency: Time to receive first byte from the server.
+---
 
-🧾 Conclusion (Summarized)
-The system handled 50 virtual users smoothly.
+## 🧪 Test Details
 
-Performance was solid: most responses under 1 second.
+- **Test Name**: Blaz_Rec2025
+- **Tool Used**: JMeter (executed via BlazeMeter)
+- **Location**: West India (Mumbai, Azure)
+- **Executed By**: Sabbir Ahamed
+- **Test Duration**: 9 minutes (03:51 PM – 04:01 PM, May 12, 2025)
 
-No errors, indicating good stability.
+---
 
-Suitable for small to medium traffic loads.
+## 📘 Glossary
 
+- **Throughput**: Requests handled per second.
+- **Response Time**: Time from request initiation to complete response received.
+- **Latency**: Time from request sent to first byte received.
+- **90% Response Time**: Time within which 90% of all requests completed.
+- **Error Rate**: Percentage of failed requests.
 
+---
 
-💡 Overall Verdict: GOOD
-Your load test results indicate a healthy, stable system under medium load (50 virtual users). Here's a breakdown:
-
-📌 Positive Indicators
-Metric	Result	Standard Benchmark	Evaluation
-Average Response Time	723 ms	Ideal: < 1000 ms	✅ Good – Fast response
-90% Response Time	1787 ms	Ideal: < 2000 ms	✅ Acceptable – Within limits
-Error Rate	0%	Ideal: < 1%	✅ Excellent – No failures
-Throughput	2.55 hits/sec	Depends on app	✅ Healthy flow
-CPU/Memory	< 75% usage	Ideal: < 80%	✅ Stable under load
-
-⚠️ Minor Considerations
-The 90th percentile response time (1787 ms) is a bit high compared to the average, which indicates that some requests took much longer than others. This is not bad, but it’s worth watching if the load increases.
-
-🚀 What This Means
-Your site or app can handle real-world user traffic (~50 users simultaneously) without crashing or slowing down drastically.
-
-This test would be considered a pass for small to mid-sized web applications or APIs.
-
-🟢 Conclusion:
-Performance is good. No errors, fast average response times, and stable resources. You are ready for real-world moderate usage. To go further, consider testing with 100+ users or simulating peak-hour scenarios.
-
-
+*Generated based on performance data from "Executive summary.pdf".*
