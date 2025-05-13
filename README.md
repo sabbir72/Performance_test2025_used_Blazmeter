@@ -1,6 +1,6 @@
 # 🚀 Load Test Summary – BlazeDemo Site
 
-## 📄 Executive Summary
+## 📄 Executive Summary  [🔗 Open PDF Report](https://drive.google.com/drive/u/1/folders/1D1vlYZscPv8Ne1qq2RJghCLBcZvTJcfu)
 
 This document summarizes the results of a load test performed on May 12, 2025, using 50 virtual users over a duration of 9 minutes.
 
