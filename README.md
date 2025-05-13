@@ -1,4 +1,6 @@
 ✅ Executive Summary – Load Test Report Explanation
+[Open PDF in Viewer](https://github.com/sabbir72/Performance_test2025_used_Blazmeter.git/Executive summary.pdf)
+
 🗓 Test Execution Details
 Tester: Sabbir Ahamed
 
